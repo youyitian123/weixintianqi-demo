@@ -1,0 +1,53 @@
+/*
+fab95b
+f5564e
+1a3263
+*/
+
+.title {
+  color: #75cac3;
+  font-size: 50rpx;
+  font-weight: bold;
+  margin-bottom: 25rpx;
+}
+
+.pubBg {
+  color: #FFF;
+  font-size: 14px;
+   box-sizing: border-box;
+  /* font-weight: bold; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 5rpx;
+  padding: 15rpx 15rpx;
+  margin-bottom: 50rpx;
+}
+
+.yesterday {
+  background: #30BCAF;
+}
+
+.tomorrow {
+  background: #78A4be;
+}
+
+.afterTomor {
+  background: #FCB654;
+}
+
+.weather_icon {
+  text-align: center;
+  height: 65px;
+  flex: 1;
+}
+
+.weather_icon image {
+  width: 75px;
+  height: 100%;
+}
+
+.Time{
+  text-align: center;
+  font-size: 25rpx;
+}

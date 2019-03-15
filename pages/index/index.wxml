@@ -1,0 +1,56 @@
+<view class='container'>
+  <view class='title'>
+    <!-- <view class='basic'>{{basic.location}} / {{basic.parent_city}}</view> -->
+  </view>
+
+  <view class='yesterday pubBg'>
+    <view class='viewLeft'>
+      <view class='date'>今天</view>
+      <view class='basic'>{{basic.location}} / {{basic.parent_city}}</view>
+      <view class='tmp'>{{today.tmp_min}}℃-{{today.tmp_max}}℃</view>
+      <view class='cond_txt' wx:if="{{dateHours<7 || dateHours>17}}">{{today.cond_txt_d}}</view>
+      <view class='cond_txt' wx:else>{{today.cond_txt_n}}</view>
+
+    </view>
+
+    <view class='viewRight'>
+      <text class='Time'>更新时间 : {{upTime}}</text>
+      <view class='weather_icon'>
+        <image src='{{todayIcon}}'></image>
+      </view>
+    </view>
+  </view>
+
+  <view class='tomorrow pubBg'>
+    <view class='viewLeft'>
+      <view class='date'>明天</view>
+      <view class='basic'>{{basic.location}} / {{basic.parent_city}}</view>
+      <view class='tmp'>{{tomorrow.tmp_min}}℃-{{tomorrow.tmp_max}}℃</view>
+      <view class='cond_txt' wx:if="{{dateHours<7 || dateHours>17}}">{{today.cond_txt_d}}</view>
+      <view class='cond_txt' wx:else>{{today.cond_txt_n}}</view>
+    </view>
+    <view class='viewRight'>
+      <text class='Time'>更新时间 : {{upTime}}</text>
+      <view>
+        <!-- <image></image> -->
+      </view>
+    </view>
+  </view>
+
+  <view class='afterTomor pubBg'>
+    <view class='viewLeft'>
+      <view class='date'>后天</view>
+      <view class='basic'>{{basic.location}} / {{basic.parent_city}}</view>
+      <view class='tmp'>{{afterTomor.tmp_min}}℃-{{afterTomor.tmp_max}}℃</view>
+       <view class='cond_txt' wx:if="{{dateHours<7 || dateHours>17}}">{{today.cond_txt_d}}</view>
+      <view class='cond_txt' wx:else>{{today.cond_txt_n}}</view>
+    </view>
+    <view class='viewRight'>
+    <text class='Time'>更新时间 : {{upTime}}</text>
+      <view>
+        <!-- <image></image> -->
+      </view>
+    </view>
+  </view>
+
+</view>
